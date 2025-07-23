@@ -13,8 +13,8 @@ import {
 } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { FiEye, FiEyeOff } from "react-icons/fi";
-import Header from "../layout/Header";
-import Footer from "../layout/Footer";
+import Header from "../../layout/Header";
+import Footer from "../../layout/Footer";
 
 export default function SignIn() {
   const [showPassword, setShowPassword] = useState(false);
@@ -28,7 +28,7 @@ export default function SignIn() {
             <Box bg="whiteAlpha.900" p={{ base: 6, md: 10 }} rounded="md" border={'1px solid'} borderColor={'gray.300'} maxW="md" w="full">
                 <Box textAlign="center" mb={8}>
                     <Heading size="lg" color="teal.600">
-                        Jewelry Store
+                        Aurora Gems
                     </Heading>
                     <Text color="gray.600" fontSize="sm">
                         Sign in to your account and sparkle today ✨
