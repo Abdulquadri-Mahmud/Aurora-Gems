@@ -58,7 +58,7 @@ export default function AddToCartDrawer() {
                 {/* Logo Section */}
                 <Box width="180px" bgImage={`url('/img/img.jpg')`} bgBlendMode="multiply" bgRepeat="no-repeat" bgSize="cover" bgPos={{ md: "left", base: "center" }} px={3} py={2} rounded="md" fontSize="2xl" fontWeight="bold" color="white" className="bg">
                   <Text as={RouterLink} to="/">
-                    Jewelry Store
+                    Aurora Gems
                   </Text>
                 </Box>
               </Drawer.Title>

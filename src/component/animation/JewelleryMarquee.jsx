@@ -5,7 +5,7 @@ import { Box, Text } from "@chakra-ui/react";
 const JewelleryMarquee = () => {
   return (
     <Box bg="gray.900" py={3} color="white">
-      <Marquee gradient={true} speed={80} direction="left" gradientWidth={50} pauseOnHover={true}>
+      <Marquee gradient={true} speed={80} direction="left" gradientWidth={100} pauseOnHover={true}>
         <Text mx={8} fontSize="lg" fontWeight="bold">
           ✨ Welcome to SparkleJewels — Your trusted jewellery store for rings,
           necklaces, bracelets & more! 💍 | Free Shipping on orders over $100! |
