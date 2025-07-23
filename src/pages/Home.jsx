@@ -20,38 +20,40 @@ import Testimonials from '../component/Testimonial'
 
 export default function Home() {
   return (
-    <Box overflow={'hidden'}>
+    <Box>
       <Header/>
-      <Box bg="white" minHeight="" py={{md:2, base : 2}} px={{md:5, base : 2}}>
-        <Hero />
+      <Box overflow={'hidden'}>
+        <Box bg="white" minHeight="" py={{md:2, base : 2}} px={{md:5, base : 2}}>
+          <Hero />
+        </Box>
+        
+        <Box my={'5'} bg={'gray.200'}>
+          <JewelryGroup/>
+        </Box>
+
+        <Box mt={10}>
+          <JewelleryMarquee/>
+        </Box>
+
+        <AboutSection/>
+        
+        <Box mt={''}/>
+        <TrendingProducts/>
+        <EaringProducts/>
+        <JewelleryImportanceSection/>
+
+        <TrendingNecklaces/>
+        <TrendingRings/>
+
+        <GoldRingImg/>
+        <TrendingBracelets/>
+        <TrendingAnklets/>
+
+        <JewelleryBlog/>
+
+        <Testimonials/>
+        <CallToAction/>
       </Box>
-      
-      <Box my={'5'} bg={'gray.200'}>
-        <JewelryGroup/>
-      </Box>
-
-      <Box mt={10}>
-        <JewelleryMarquee/>
-      </Box>
-
-      <AboutSection/>
-      
-      <Box mt={''}/>
-      <TrendingProducts/>
-      <EaringProducts/>
-      <JewelleryImportanceSection/>
-
-      <TrendingNecklaces/>
-      <TrendingRings/>
-
-      <GoldRingImg/>
-      <TrendingBracelets/>
-      <TrendingAnklets/>
-
-      <JewelleryBlog/>
-
-      <Testimonials/>
-      <CallToAction/>
       <Footer/>
     </Box>
   )
