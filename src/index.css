@@ -1,0 +1,8 @@
+body{
+    background-color: white;
+    color: black;
+}
+.bg{
+    background-blend-mode: multiply;
+    background: #979797;
+}
