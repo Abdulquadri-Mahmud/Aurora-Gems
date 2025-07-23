@@ -6,7 +6,7 @@ import { GiBigDiamondRing, GiGemNecklace } from "react-icons/gi";
 
 export default function BottomNav() {
   return (
-    <Box display={{ md: "none" }} position="fixed" bottom="0" left="0" right="0" bg="white" borderTop="1px solid" borderColor="gray.200" zIndex="999">
+    <Box display={{ md: "none" }} overflow={'hidden'} position="fixed" bottom="0" left="0" right="0" bg="white" borderTop="1px solid" borderColor="gray.200" zIndex="999">
       <Flex justify="space-around" align="center" py={3}>
         <NavItem to="/" icon={<FiHome size={24} />} label="Home" isActive />
         <NavItem to="/shop" icon={<FiShoppingBag size={24} />} label="Shop" />

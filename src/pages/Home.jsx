@@ -20,7 +20,7 @@ import Testimonials from '../component/Testimonial'
 
 export default function Home() {
   return (
-    <>
+    <Box overflow={'hidden'}>
       <Header/>
       <Box bg="white" minHeight="" py={{md:2, base : 2}} px={{md:5, base : 2}}>
         <Hero />
@@ -53,6 +53,6 @@ export default function Home() {
       <Testimonials/>
       <CallToAction/>
       <Footer/>
-    </>
+    </Box>
   )
 }
