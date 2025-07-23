@@ -64,7 +64,7 @@ const mockNecklaces = [
 const TrendingNecklaces = () => {
   return (
     <Box py={10}>
-        <Box textAlign={"center"} maxW={"lg"} mx={"auto"} bg={{ md: "gray.200" }} py={2} roundedTop={"xl"}>
+        <Box textAlign={"center"} maxW={"lg"} mx={"auto"} bg={{ md: "gray.200", base: 'gray.100' }} py={2} roundedTop={"xl"}>
             <Heading as="h2" size="2xl" mb={2}>
                 Trending Necklace
             </Heading>
@@ -73,7 +73,7 @@ const TrendingNecklaces = () => {
             </Text>
         </Box>
 
-        <Box py={5} bg={{ md: "gray.200" }} maxW={{ md: "97%" }} rounded={"lg"} mx={"auto"} px={{ md: "5", base: "2" }}>
+        <Box py={5} bg={{ md: "gray.200", base: 'gray.100' }} maxW={{ md: "97%" }} rounded={"lg"} mx={"auto"} px={{ md: "5", base: "2" }}>
             <SimpleGrid columns={[2, 2, 3, 4, 6]} gap={2}>
                 {mockNecklaces.map((product) => (
                     <Box key={product.id} maxW="sm" borderWidth="1px" borderColor="gray.200" borderRadius="lg" overflow="hidden" p={2} bg={"white"}>

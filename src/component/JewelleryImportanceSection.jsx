@@ -11,17 +11,9 @@ import {
 const JewelleryImportanceSection = () => {
   return (
     <Box py={16} px={{ base: 4, md: 16 }}>
-      <SimpleGrid columns={{ base: 1, md: 2 }} gap={10} alignItems="center">
+      <SimpleGrid columns={{ base: 1, md: 2 }} gap={{md: 8, base: 4}} alignItems="center">
         {/* Left: Image */}
-        <Image
-          src="/img/img2.jpg"
-          alt="Beautiful jewellery display"
-          borderRadius="md"
-          objectFit="cover"
-          w="100%"
-          h={{ base: "250px", md: "400px" }}
-          fallbackSrc="https://via.placeholder.com/600x400?text=Jewellery"
-        />
+        <Image src="/img/img2.jpg" alt="Beautiful jewellery display" borderRadius="md" objectFit="cover" w="100%" h={{ base: "250px", md: "400px" }} fallbackSrc="https://via.placeholder.com/600x400?text=Jewellery"/>
 
         {/* Right: Heading + Content */}
         <Stack spacing={8}>

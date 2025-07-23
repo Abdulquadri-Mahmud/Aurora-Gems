@@ -12,7 +12,7 @@ import { FaInstagram, FaFacebook, FaTwitter, FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <Box bg="gray.900" color="gray.200" py={10} px={{ base: 4, md: 12 }}>
+    <Box bg="gray.900" color="gray.200" pt={10} pb={20} px={{ base: 4, md: 12 }}>
       <SimpleGrid columns={{ base: 1, md: 4 }} spacing={8}>
         {/* Brand Info */}
         <Stack spacing={4}>

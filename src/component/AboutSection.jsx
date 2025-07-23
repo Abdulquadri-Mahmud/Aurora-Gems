@@ -11,21 +11,10 @@ import {
 const AboutSection = () => {
   return (
     <Box py={12} px={{ base: 4, md: 16 }}>
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        align="center"
-        gap={8}
-      >
-        {/* Left: Image */}
+      <Flex direction={{ base: "column", md: "row" }} align="center" gap={{md: 8, base: 4}}> 
+      {/* Left: Image */}
         <Box flex="1">
-          <Image
-            src="/img/img1.jpg"
-            alt="Jewellery Display"
-            borderRadius="md"
-            w="100%"
-            h={{ base: "auto", md: "400px" }}
-            objectFit="cover"
-          />
+          <Image src="/img/img1.jpg" alt="Jewellery Display" borderRadius="md" w="100%" h={{ base: "auto", md: "400px" }} objectFit="cover"/>
         </Box>
 
         {/* Right: Content */}

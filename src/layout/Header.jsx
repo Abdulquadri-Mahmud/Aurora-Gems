@@ -37,7 +37,7 @@ export default function Header({ cartCount = 0, wishlistCount = 0 }) {
           <Text>Aurora Gems</Text>
         </Box>
 
-        <Box display={{ base: "none", md: "block" }} maxWidth={'100%'} mx={'auto'} py={3} px={5} roundedBottom={'xl'} bg={'whiteAlpha.600'} pos={'absolute'} bottom={'-10'} transform={'translateX(-50%)'} left={'50%'}>
+        <Box display={{ base: "none", md: "block" }} maxWidth={'100%'} mx={'auto'} py={3} px={5} roundedBottom={'xl'} bg={'whiteAlpha.600'} pos={'absolute'} bottom={'-12'} transform={'translateX(-50%)'} left={'50%'}>
           <HStack display={{ base: "none", md: "flex" }} gap={7} fontWeight="medium">
             {navLinks.map((link) => (
               <Link as={RouterLink} to={link.path} key={link.name}  color={'black'} _hover={{ textDecoration: "none", color: "teal.600" }}>
