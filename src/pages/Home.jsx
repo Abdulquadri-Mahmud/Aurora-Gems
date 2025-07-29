@@ -37,17 +37,18 @@ export default function Home() {
 
         <AboutSection/>
         
-        <Box mt={''}/>
-        <TrendingProducts/>
-        <EaringProducts/>
-        <JewelleryImportanceSection/>
+        <Box mt={''} id='collections'>
+          <TrendingProducts/>
+          <EaringProducts/>
+          <JewelleryImportanceSection/>
 
-        <TrendingNecklaces/>
-        <TrendingRings/>
+          <TrendingNecklaces/>
+          <TrendingRings/>
 
-        <GoldRingImg/>
-        <TrendingBracelets/>
-        <TrendingAnklets/>
+          <GoldRingImg/>
+          <TrendingBracelets/>
+          <TrendingAnklets/>
+        </Box>
 
         <JewelleryBlog/>
 

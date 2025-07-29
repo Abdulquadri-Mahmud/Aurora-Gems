@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { FaShoppingCart } from "react-icons/fa";
 import { Link as RouterLink } from "react-router-dom";
+import Checkout from "../../Checkout/CheckoutDrawer";
 
 export default function AddToCartDrawer() {
   // Mock cart items — replace with context or props later
@@ -93,9 +94,9 @@ export default function AddToCartDrawer() {
               <Drawer.CloseTrigger asChild>
                 <Button bg="red.600" color={'white'} mt={3}>Close</Button>
               </Drawer.CloseTrigger>
-              {cartItems.length > 0 && (
-                <Button bg="teal" color={'white'}>Checkout</Button>
-              )}
+              {/* {cartItems.length > 0 && (
+              )} */}
+              <Checkout/>
             </Drawer.Footer>
           </Drawer.Content>
         </Drawer.Positioner>

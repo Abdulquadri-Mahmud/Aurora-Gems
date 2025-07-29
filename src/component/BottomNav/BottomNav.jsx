@@ -3,20 +3,30 @@ import { Box, Flex, Text } from "@chakra-ui/react";
 import { Link as RouterLink } from "react-router-dom";
 import { FiHome, FiShoppingBag, FiHeart, FiShoppingCart } from "react-icons/fi";
 import { GiBigDiamondRing, GiGemNecklace } from "react-icons/gi";
+import CategoryPopupMenu from "./CategoryPopupMenu";
 
-export default function BottomNav() {
+const BottomNav = () => {
   return (
-    <Box display={{ md: "none" }} overflow={'hidden'} position="fixed" bottom="0" left="0" right="0" bg="white" borderTop="1px solid" borderColor="gray.200" zIndex="100">
+    <Box display={{ md: "none" }} overflow="hidden" position="fixed" bottom="0" left="0" right="0" bg="white" borderTop="1px solid" borderColor="gray.200" zIndex="100">
       <Flex justify="space-around" align="center" py={3}>
         <NavItem to="/" icon={<FiHome size={24} />} label="Home" isActive />
-        <NavItem to="/shop" icon={<FiShoppingBag size={24} />} label="Shop" />
+        {/* <NavItem to="/shop" icon={<FiShoppingBag size={24} />} label="Shop" /> */}
+        
+        {/* 👇 Replaced or inserted Category popup here */}
+        <Box overflow="visible" zIndex="overlay">
+          <CategoryPopupMenu />
+        </Box>
+
+
         <NavItem to="/" icon={<GiGemNecklace size={24} />} label="Necklace" />
-        <NavItem to="/" icon={<GiBigDiamondRing size={24} />} label="Ring" />
         <NavItem to="/cart" icon={<FiShoppingCart size={24} />} label="Cart" />
       </Flex>
     </Box>
   );
-}
+};
+
+export default BottomNav;
+
 
 function NavItem({ to, icon, label, isActive }) {
   return (

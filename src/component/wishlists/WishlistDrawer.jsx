@@ -35,9 +35,11 @@ export default function WishlistDrawer() {
   return (
     <Drawer.Root>
       <Drawer.Trigger asChild>
-        <Flex position="relative" zIndex={1} color={'pink.600'} cursor={'pointer'} justifyContent={'center'} alignItems={'center'} bg={'gray.200'} p={2} rounded={'full'}>
-            <FaHeart />
-            <Text pos="absolute" top={-2} right={-2} bg="pink.500" color="white" px={2} fontSize="xs" rounded="full" minW="20px" textAlign="center">
+        <Flex position="relative" zIndex={1} fontWeight={'600'} color={'teal.600'} cursor={'pointer'} justifyContent={'space-between'} alignItems={'center'} bg={'gray.200'} _hover={{color: 'teal.800', bg: 'gray.300'}} rounded={'md'}>
+            <Text display={'flex'} alignItems={'center'} gap={2} py={3} px={3} fontSize="md" >
+              <FaHeart /> My Wishlist
+            </Text>
+            <Text bg="teal.500" color="white" px={4} py={'3'} roundedRight={'md'} fontSize="lg" minW="20px" textAlign="center">
                 {wishlistCount}
             </Text>
         </Flex>
@@ -81,11 +83,11 @@ export default function WishlistDrawer() {
                   Close
                 </Button>
               </Drawer.CloseTrigger>
-              {wishlistItems.length > 0 && (
+              {/* {wishlistItems.length > 0 && (
                 <Button as={RouterLink} to="/wishlist" bg="red.500" color="white" mt={3}>
                   Go to Wishlist
                 </Button>
-              )}
+              )} */}
             </Drawer.Footer>
           </Drawer.Content>
         </Drawer.Positioner>

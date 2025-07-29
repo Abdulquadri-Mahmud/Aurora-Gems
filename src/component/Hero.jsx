@@ -23,10 +23,11 @@ export default function Hero() {
                 <Text fontSize={{ base: 'md', md: 'xl' }}>
                     Explore our handcrafted collection of exquisite jewelry — where tradition meets luxury and every detail tells a story of beauty, class, and craftsmanship.
                 </Text>
-
-                <Button size="lg" bg="whiteAlpha.800" _hover={{ bg: 'whiteAlpha.500' }}>
-                    Shop the Collection
-                </Button>
+                <a href="#collections">
+                    <Button size="lg" bg="whiteAlpha.800" _hover={{ bg: 'whiteAlpha.500' }}>
+                        Shop the Collection
+                    </Button>
+                </a>
 
                 <Box justifyContent={'center'} alignItems={'center'} borderTop={'4px solid'} borderLeft={'4px solid'} borderColor={'white'} w={{md:'250px', base: '150px'}} h={{md:'150px', base: '100px'}} bgImage={`url('/img/img.jpg')`} bg={''} bgPos={'top'} bgSize={'cover'} bgRepeat="no-repeat" bgBlendMode={'multiply'} position="absolute" bottom="0" right="2" p={'2'} roundedBottomRight="md" roundedTopLeft={'xl'} className="bg"/>
             </VStack>
