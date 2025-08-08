@@ -21,7 +21,7 @@ export default function Hero() {
                 </Heading>
 
                 <Text fontSize={{ base: 'md', md: 'xl' }}>
-                    Explore our handcrafted collection of exquisite jewelry — where tradition meets luxury and every detail tells a story of beauty, class, and craftsmanship.
+                    Explore our handcrafted collection of exquisite jewelry, where tradition meets luxury and every detail tells a story of beauty, class, and craftsmanship.
                 </Text>
                 <a href="#collections">
                     <Button size="lg" bg="whiteAlpha.800" _hover={{ bg: 'whiteAlpha.500' }}>
